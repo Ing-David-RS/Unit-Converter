@@ -6,38 +6,40 @@ Into each of the folder there are a script that you will let's go to use for to 
 ###### Length_Converter
 In this case, the conversion only works for:
 
-   -**Meter (m)**
-   -**Centimeter (cm)**
-   -**Foot (ft)**
-   -**Inch (in)**
+   - **Meter (m)**
+   - **Centimeter (cm)**
+   - **Foot (ft)**
+   - **Inch (in)**
 
 ###### Area_Converter
 In this case, the conversion only works for:
-   -**Square meter (m^2)**
-   -**Square inch (in^2)**
+
+   - **Square meter (m^2)**
+   - **Square inch (in^2)**
 
 ###### Mass_Converter
 In this case, the conversion only works for:
 
-   -**ton (t)**
-   -**Kilogram (kg)**
-   -**gram (g)**
-   -**pound (lbs)**
+   - **ton (t)**
+   - **Kilogram (kg)**
+   - **gram (g)**
+   - **pound (lbs)**
 
 ###### Volume_Converter
 In this case, the conversion only works for:
 
-   -**Cubic meter (m^3)**
-   -**Cubic centimeter (cm^3)
-   -**Liter (L)
+   - **Cubic meter (m^3)**
+   - **Cubic centimeter (cm^3)
+   - **Liter (L)
 ## How is this works
 Script accept two parameters:
-   -**Type of convertion**
-   -**Magnitude**
+
+   - **Type of convertion**
+   - **Magnitude**
 
 Into teminal of linux put the following:
 
-   -_For example_:
+   - _For example_:
    	 Area_Converter/AC_script kg2gram 2.5
 
 ## Notes
