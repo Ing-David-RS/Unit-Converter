@@ -1,1 +1,148 @@
 #!/bin/bash
+#We received to the first command
+type_Conversion=$1 | bc
+
+tc_1="m2cm"
+tc_2="m2ft"
+tc_3="m2in"
+tc_4="cm2m"
+tc_5="cm2ft"
+tc_6="cm2in"
+tc_7="ft2m"
+tc_8="ft2cm"
+tc_9="ft2in"
+tc_10="in2m"
+tc_11="in2cm"
+tc_12="in2ft"
+fact_1=100
+fact_2=3.2808
+fact_3=39.37
+fact_4=0.01
+fact_5=0.0328
+fact_6=0.3937
+fact_7=0.3048
+fact_8=30.48
+fact_9=12.00
+fact_10=0.0254
+fact_11=2.54
+fact_12=0.0833
+
+
+#We make the comparison
+echo "-------------------------------------------"
+case $1 in
+    $tc_1) echo "Let's go to converter meter to centimeter"
+	   echo "Type of conversion: $1"
+	   echo "Magnitude: $2"
+	   echo "To converter $2 m to cm"
+	   Result1=$(echo "$2*$fact_1" | bc)
+	   echo "-"
+	   echo "The result of conversion is: $Result1 cm"
+	 
+	   ;;
+     $tc_2) echo "Let's go to converter meter to foot"
+	   echo "Type of conversion: $1"
+	   echo "Magnitude: $2"
+	   echo "To converter $2 m to ft"
+	   Result2=$(echo "$2*$fact_2" | bc)
+	   echo "-"
+	   echo "The result of conversion is: $Result2 ft"
+	 
+	   ;;
+      $tc_3) echo "Let's go to converter meter to Inch"
+	   echo "Type of conversion: $1"
+	   echo "Magnitude: $2"
+	   echo "To converter $2 m to in"
+	   Result3=$(echo "$2*$fact_3" | bc)
+	   echo "-"
+	   echo "The result of conversion is: $Result3 cm"
+	 
+	   ;;
+       $tc_4) echo "Let's go to converter centimeter to meter"
+	   echo "Type of conversion: $1"
+	   echo "Magnitude: $2"
+	   echo "To converter $2 cm to m"
+	   Result4=$(echo "$2*$fact_4" | bc)
+	   echo "-"
+	   echo "The result of conversion is: $Result4 m"
+	 
+	   ;;
+        $tc_5) echo "Let's go to converter centimeter to foot"
+	   echo "Type of conversion: $1"
+	   echo "Magnitude: $2"
+	   echo "To converter $2 cm to ft"
+	   Result5=$(echo "$2*$fact_5" | bc)
+	   echo "-"
+	   echo "The result of conversion is: $Result5 ft"
+	 
+	   ;;
+	 $tc_6) echo "Let's go to converter centimeter to inch"
+	   echo "Type of conversion: $1"
+	   echo "Magnitude: $2"
+	   echo "To converter $2 cm to in"
+	   Result6=$(echo "$2*$fact_6" | bc)
+	   echo "-"
+	   echo "The result of conversion is: $Result6 in"
+	 
+	   ;;
+	 $tc_7) echo "Let's go to converter foot to meter"
+	   echo "Type of conversion: $1"
+	   echo "Magnitude: $2"
+	   echo "To converter $2 ft to m"
+	   Result7=$(echo "$2*$fact_7" | bc)
+	   echo "-"
+	   echo "The result of conversion is: $Result7 m"
+	 
+	   ;;
+	 $tc_8) echo "Let's go to converter foot to centimeter"
+	   echo "Type of conversion: $1"
+	   echo "Magnitude: $2"
+	   echo "To converter $2 ft to cm"
+	   Result8=$(echo "$2*$fact_8" | bc)
+	   echo "-"
+	   echo "The result of conversion is: $Result8 cm"
+	 
+	   ;;
+	 $tc_9) echo "Let's go to converter foot to in"
+	   echo "Type of conversion: $1"
+	   echo "Magnitude: $2"
+	   echo "To converter $2 ft to in"
+	   Result9=$(echo "$2*$fact_9" | bc)
+	   echo "-"
+	   echo "The result of conversion is: $Result9 in"
+	 
+	   ;;
+	 $tc_10) echo "Let's go to converter in to meter"
+	   echo "Type of conversion: $1"
+	   echo "Magnitude: $2"
+	   echo "To converter $2 in to m"
+	   Result10=$(echo "$2*$fact_10" | bc)
+	   echo "-"
+	   echo "The result of conversion is: $Result10 m"
+	 
+	   ;;
+	 $tc_11) echo "Let's go to converter in to centimeter"
+	   echo "Type of conversion: $1"
+	   echo "Magnitude: $2"
+	   echo "To converter $2 in to cm"
+	   Result11=$(echo "$2*$fact_11" | bc)
+	   echo "-"
+	   echo "The result of conversion is: $Result11 cm"
+	 
+	   ;;
+	 $tc_12) echo "Let's go to converter inch to foot"
+	   echo "Type of conversion: $1"
+	   echo "Magnitude: $2"
+	   echo "To converter $2 in to ft"
+	   Result12=$(echo "$2*$fact_12" | bc)
+	   echo "-"
+	   echo "The result of conversion is: $Result12 ft"
+	 
+	   ;;
+	 *) echo "Error: The type of conversion not exists"
+	 
+	   ;;
+		
+esac
+
+echo "-------------------------------------------"
