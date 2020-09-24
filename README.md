@@ -20,8 +20,6 @@ In this case, the conversion only works for:
 ###### Mass_Converter
 In this case, the conversion only works for:
 
-   - **ton (t)**
-   - **Kilogram (kg)**
    - **gram (g)**
    - **pound (lbs)**
 
@@ -29,8 +27,8 @@ In this case, the conversion only works for:
 In this case, the conversion only works for:
 
    - **Cubic meter (m^3)**
-   - **Cubic centimeter (cm^3)
    - **Liter (L)
+   
 ## How is this works
 Script accept two parameters:
 
