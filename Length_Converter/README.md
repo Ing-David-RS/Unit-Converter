@@ -10,7 +10,7 @@ In this case, the conversion only works for:
 ## How is this works
 Into terminal of linux put the following:
 
-_./LC_script_ parameter magnitude_of_unit
+- **_./LC_script_** **parameter** **magnitude_of_unit**
 
 ###### The parameters are the followings:
 - m2cm
