@@ -1,0 +1,41 @@
+#!/bin/bash
+#We received to the first command
+type_Conversion=$1 | bc
+
+tc_1="L2m3"
+tc_2="m3-L"
+
+fact_1=1000
+fact_2=0.001
+
+
+
+#We make the comparison
+echo "-------------------------------------------"
+case $1 in
+    $tc_1) echo "Let's go to converter cubic meter to liter"
+	   echo "Type of conversion: $1"
+	   echo "Magnitude: $2"
+	   echo "To converter $2 m^3 to L"
+	   Result1=$(echo "$2*$fact_1" | bc)
+	   echo "-"
+	   echo "The result of conversion is: $Result1 L"
+	 
+	   ;;
+     $tc_2) echo "Let's go to converter liter to m^3"
+	   echo "Type of conversion: $1"
+	   echo "Magnitude: $2"
+	   echo "To converter $2 L to m^3"
+	   Result2=$(echo "$2*$fact_2" | bc)
+	   echo "-"
+	   echo "The result of conversion is: $Result2 m^3"
+	 
+	   ;;
+     
+	 *) echo "Error: The type of conversion not exists"
+	 
+	   ;;
+		
+esac
+
+echo "-------------------------------------------"

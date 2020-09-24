@@ -1,0 +1,41 @@
+#!/bin/bash
+#We received to the first command
+type_Conversion=$1 | bc
+
+tc_1="g2lbs"
+tc_2="lbs2g"
+
+fact_1=0.0022046226
+fact_2=453.59237
+
+
+
+#We make the comparison
+echo "-------------------------------------------"
+case $1 in
+    $tc_1) echo "Let's go to converter gram to pound(lbs)"
+	   echo "Type of conversion: $1"
+	   echo "Magnitude: $2"
+	   echo "To converter $2 g to lbs"
+	   Result1=$(echo "$2*$fact_1" | bc)
+	   echo "-"
+	   echo "The result of conversion is: $Result1 lbs"
+	 
+	   ;;
+     $tc_2) echo "Let's go to converter pounds(lbs) to gram"
+	   echo "Type of conversion: $1"
+	   echo "Magnitude: $2"
+	   echo "To converter $2 lbs to g"
+	   Result2=$(echo "$2*$fact_2" | bc)
+	   echo "-"
+	   echo "The result of conversion is: $Result2 g"
+	 
+	   ;;
+      
+	 *) echo "Error: The type of conversion not exists"
+	 
+	   ;;
+		
+esac
+
+echo "-------------------------------------------"

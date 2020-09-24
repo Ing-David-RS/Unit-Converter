@@ -1,0 +1,40 @@
+#!/bin/bash
+#We received to the first command
+type_Conversion=$1 | bc
+
+tc_1="m2-in2"
+tc_2="in2-m2"
+
+fact_1=1550.0031
+fact_2=0.00064516
+
+
+#We make the comparison
+echo "-------------------------------------------"
+case $1 in
+    $tc_1) echo "Let's go to converter meter^2 to inch^2"
+	   echo "Type of conversion: $1"
+	   echo "Magnitude: $2"
+	   echo "To converter $2 m^2 to in^2"
+	   Result1=$(echo "$2*$fact_1" | bc)
+	   echo "-"
+	   echo "The result of conversion is: $Result1 in^2"
+	 
+	   ;;
+     $tc_2) echo "Let's go to converter inch^2 to m^2"
+	   echo "Type of conversion: $1"
+	   echo "Magnitude: $2"
+	   echo "To converter $2 inch^2 to m^2"
+	   Result2=$(echo "$2*$fact_2" | bc)
+	   echo "-"
+	   echo "The result of conversion is: $Result2 m^2"
+
+	   ;;
+     
+      *) echo "Error: The type of conversion not exists"
+	 
+	   ;;
+		
+esac
+
+echo "-------------------------------------------"
