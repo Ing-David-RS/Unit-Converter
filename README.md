@@ -41,4 +41,4 @@ Into teminal of linux put the following:
    	 Area_Converter/AC_script kg2gram 2.5
 
 ## Notes
-For the moment this is my first project and if you any comment this is my [email](ingdramirezs@gmail.com)
+For the moment this is my first project and if you any comment this is my [email](mailto:ingdramirezs@gmail.com)
