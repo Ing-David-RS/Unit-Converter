@@ -27,7 +27,7 @@ In this case, the conversion only works for:
 In this case, the conversion only works for:
 
    - **Cubic meter (m^3)**
-   - **Liter (L)
+   - **Liter (L)**
    
 ## How is this works
 Script accept two parameters:
